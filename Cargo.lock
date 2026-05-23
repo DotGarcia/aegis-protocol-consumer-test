@@ -4,13 +4,14 @@ version = 4
 
 [[package]]
 name = "aegis-protocol"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "95b801c6668a3fcd4bafbc45dc317fc2b7b3f2741fcb29089298bb4667994fc5"
+checksum = "83aef4ebd680674b7606dd52d392f24b3aba644bf28addc92128bc71c90ba35d"
 dependencies = [
  "aegis-protocol-codegen",
  "aegis-protocol-core",
  "aegis-protocol-idl",
+ "aegis-protocol-token",
  "aegis-protocol-wire",
 ]
 
@@ -41,6 +42,15 @@ name = "aegis-protocol-idl"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "962865588aa65f3223726afe87c7b377d497d780472f5abd6fef190eaf1d7f78"
+
+[[package]]
+name = "aegis-protocol-token"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34c921be55e0c7dd60d28635e416a6074645ee5bd01e1464085f15010c90bbaf"
+dependencies = [
+ "aegis-protocol-core",
+]
 
 [[package]]
 name = "aegis-protocol-wire"
